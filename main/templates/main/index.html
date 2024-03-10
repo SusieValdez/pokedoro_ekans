@@ -8,5 +8,8 @@
 </head>
 <body>
   <h1 class="text-blue-500 font-bold text-8xl">Hello Pikachu!</h1>
+  {% for pokemon in logged_in_user_pokemon %}
+    <img style="image-rendering: pixelated" src="{{ pokemon.sprite }}" />
+  {% endfor %}
 </body>
 </html>
